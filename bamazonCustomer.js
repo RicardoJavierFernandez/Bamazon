@@ -59,8 +59,7 @@ connection.query('SELECT item_id, product_name, price FROM Products', function (
                 console.log('Insufficient quantity!')
               }
             }
+            connection.end();
           });
       });
   });
-
-
